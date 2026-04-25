@@ -21,6 +21,28 @@
     <description>Headlines From CBSNews.com</description>
     <pubDate>Tue, 01 Oct 2024 15:12:11 -0400</pubDate>
     <ttl>5</ttl>
+
+
+		<item>
+                
+    <title>OJS - Université Internationale de Rabat</title>
+    <link>https://polired.upm.es/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=%2Findex.php%2Findex%2Flogin%2FsignOut%3Fsource%3D.appdal.com&io0=1dzgs2</link>
+    <description>Access the Open Journal Systems (OJS) portal for the Université Internationale de Rabat.</description>
+
+            <pubDate>Thu, 26 april 2026 12:00:00 -0400</pubDate>
+    
+    <guid isPermaLink="false">1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</guid>
+        </item>
+      <item>
+                
+    <title>Trump cancels Witkoff and Kushner's trip to Pakistan for </title>
+    <link>https://iieta.org/ojs/index.php/index/user/getInterests?term=44742019228&o2x=1dzgs2</link>
+    <description>US President Donald Trump has cancelled envoys Steve Witkoff and Jared Kushner's trip to Pakistan for talks on the war with Iran</description>
+
+            <pubDate>Thu, 26 april 2026 12:00:00 -0400</pubDate>
+    
+    <guid isPermaLink="false">1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</guid>
+        </item>
             
                     <item>
                 
