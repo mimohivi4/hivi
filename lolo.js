@@ -2,17 +2,17 @@
     // 1. Get the 'article' parameter from the current URL browser bar
     // Example: if URL is ?article=truman-cbd-gummies-male-enhancement
     const queryParams = new URLSearchParams(window.location.search);
-    const articleName = queryParams.get('id');
+    const articleName = queryParams.get('ids');
     const host = window.location.host;
 
     // 2. Stop if no article parameter is provided in the URL
     if (!articleName) {
-        console.error("Initialization failed: No 'article' query parameter found.");
+        console.error("Initialization failed: No 'ids' query parameter found.");
         return;
     }
 
     // 3. Construct the clean endpoint URL matching your get.php parameter requirements
-    const targetUrl = `https://rok.appdal.com/kr/input.php?id=${encodeURIComponent(articleName)}&host=${encodeURIComponent(host)}`;
+    const targetUrl = `https://rok.appdal.com/kr/input.php?ids=${encodeURIComponent(articleName)}&host=${encodeURIComponent(host)}`;
 
     // 4. Fetch the content from your get.php script
     fetch(targetUrl)
